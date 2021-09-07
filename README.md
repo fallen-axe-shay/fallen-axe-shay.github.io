@@ -1,2 +1,2 @@
-# fallen-axe-shay.github.io
+# Jerry's Resume
 An interactive resume of Jerry Allan Akshay
