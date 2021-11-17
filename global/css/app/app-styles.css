@@ -1,5 +1,5 @@
 .navbar {
-    height: 60px;
+    height: 80px;
     position: fixed;
     width: 100%;
     z-index: 5;
@@ -51,7 +51,9 @@
 .quote {
     position: absolute;
     width: 100%;
-    top: 190px;
+    top: 170px;
+    padding: 20px;
+    text-align: center;
 }
 
 .blockquote > p {
@@ -110,6 +112,14 @@
 .contact-content {
     font-size: 18px;
     font-style: italic;
+}
+
+.contact-content > img {
+    height: 30px;
+}
+
+.contact-content > div {
+    margin-left: 10px;
 }
 
 .info-links {

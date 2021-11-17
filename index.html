@@ -53,9 +53,15 @@
                     <h1 class="display-6">Contact Information</h1>
                     <div class="d-flex flex-column p-2">
                         <span class="contact-headers">Address</span>
-                        <span class="contact-content">2707 Portland St, 211, Los Angeles, CA 90007</span>
+                        <div class="contact-content d-flex align-items-center">
+                            <img src="global/icons/map-pointer.png"/>
+                            <div>2707 Portland St, 211, Los Angeles, CA 90007</div>
+                        </div>
                         <span class="contact-headers">Contact Number</span>
-                        <span class="contact-content">+1 (213)-522-6313</span>
+                        <div class="contact-content d-flex align-items-center">
+                            <img src="global/icons/phone.png"/>
+                            <div>+1 (213)-522-6313</div>
+                        </div>
                         <span class="contact-headers">Online Profiles</span>
                         <div class="d-flex flex-row justify-content-between">
                             <a class="d-flex contact-icon align-content-center" href="https://www.linkedin.com/in/jerry-allan-akshay-2bb934133/" target="_blank" rel="noopener noreferrer">
@@ -264,6 +270,35 @@
                 <hr>
                 <div class="info-container">
                     <h1 class="display-6">Projects</h1>
+                    <div class="p-2">
+                        <!--Content-->
+                        <div class="accordion" id="publications-accordion">
+                            <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#publications-collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                EPM: Meta-learning method for Remote Sensing Image classification
+                                </button>
+                            </h2>
+                            <div id="publications-collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#publications-accordion">
+                                <div class="accordion-body d-flex flex-column">
+                                    <div class="p-2">
+                                        <strong>Conference: </strong> MISS-2021 Springer Conference
+                                    </div>
+                                    <div class="p-2">
+                                        <strong>Description: </strong> Co-authored a paper on a proprietary improved ensemble remote sensing image classification model leveraging few-shot learning paradigm to improve accuracy scores by around 10% over traditional few-shot learning models
+                                    </div>
+                                    <div class="p-2">
+                                        <strong>Status: </strong> Accepted at MISS-2021 Springer Conference. Pending publication in book series 'Algorithms for Intelligent Systems'
+                                    </div>
+                                    <div class="d-flex p-2">
+                                        <a class="btn btn-success btn-lg publications-btn" href="/global/misc/epm-paper.pdf" role="button" download="EPM Springer Paper.pdf">Download Paper</a>
+                                        <a class="btn btn-success btn-lg publications-btn" href="/global/misc/miss-2021-certificate.pdf" role="button" download="MISS 2021 Certificate.pdf">Download Certificate</a>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <hr>
                 <div class="info-container">
