@@ -1,0 +1,65 @@
+.navbar {
+    height: 60px;
+}
+
+.profile-picture {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-right: 10px;
+    margin-top: 10px;
+    width: 200px;
+    height: 200px;
+}
+
+.profile-picture > img {
+    width: 180px;
+    border-radius: 110px;
+    right: 0;
+    top: 0;
+    margin-left: 11px;
+    margin-top: 9px;
+    z-index: 10;
+}
+
+.circle {
+    background: #212529;
+    min-width: 200px;
+    min-height: 200px;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.name {
+    font-size: 25px;
+}
+
+.quote-bg-img > img {
+    height: 300px;
+    min-width: -webkit-fill-available;
+    object-fit: none; /* Do not scale the image */
+    object-position: bottom; /* Center the image within the element */
+}
+
+.quote {
+    position: absolute;
+    width: 100%;
+    top: 190px;
+}
+
+.blockquote > p {
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.blockquote-footer {
+    color: white;
+    position: relative;
+    float: right;
+    font-size: 20px;
+    margin-top: 5px;
+}
