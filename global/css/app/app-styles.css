@@ -152,3 +152,7 @@
     color: white;
     background-color: rgb(87, 0, 109);
 }
+
+#universal-interpreter-link {
+    cursor: pointer;
+}
