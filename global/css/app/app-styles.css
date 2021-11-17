@@ -177,3 +177,7 @@
 .accordion-button:not(.collapsed) {
     background-color: white;
 }
+
+.address-content {
+    cursor: pointer;
+}
