@@ -81,6 +81,7 @@
 .resume-download {
     border-left: gray 1px dashed;
     width: 400px;
+    margin-left: 20px;
 }
 
 .info-container {
@@ -112,6 +113,8 @@
 .contact-content {
     font-size: 18px;
     font-style: italic;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .contact-content > img {
@@ -122,6 +125,10 @@
     margin-left: 10px;
 }
 
+.contact-profiles {
+    padding-top: 10px;
+}
+
 .info-links {
     font-style: italic;
 }
@@ -130,4 +137,18 @@
     margin-right: 20px;
     height: 40px;
     font-size: 15px;
+}
+
+.skills-btn {
+    font-size: 15px;
+    font-weight: bold;
+    background-color: rgb(120, 0, 150);
+    color: white;
+    border: rgb(120, 0, 150);
+    margin-right: 10px;
+}
+
+.skills-btn:hover {
+    color: white;
+    background-color: rgb(87, 0, 109);
 }
