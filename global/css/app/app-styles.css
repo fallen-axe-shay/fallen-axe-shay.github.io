@@ -156,3 +156,8 @@
 #universal-interpreter-link {
     cursor: pointer;
 }
+
+.hobbies-image {
+    height: 200px;
+    border-radius: 20px;
+}
