@@ -38,52 +38,242 @@
 
             <!--Brief Intro-->
             <div class="jumbotron">
-                <h1 class="display-4">Hi There!</h1>
-                <p class="lead">Welcome to my portfolio. Here, you'll find my accomplishments and contact information.</p>
+                <div class="d-flex align-items-center">
+                    <div class="flex-grow-1">
+                        <h1 class="display-4">Hi There!</h1>
+                        <p class="lead">Welcome to my portfolio. Here, you'll find my credentials, accomplishments, and contact information too!</p>
+                    </div>
+                    <div class="d-flex flex-column align-items-center p-2 resume-download">
+                        <span>Skip the scroll. Download my Resume!</span>
+                        <a class="btn btn-primary btn-lg" href="/global/misc/Jerry Resume - Updated.pdf" role="button" download="Jerry Resume.pdf">Download Resume</a>
+                    </div>
+                </div>
                 <hr class="my-4">
-                <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-                <a class="btn btn-primary btn-lg" href="#" role="button">Download Resume</a>
+                <div class="info-container">
+                    <h1 class="display-6">Contact Information</h1>
+                    <div class="d-flex flex-column p-2">
+                        <span class="contact-headers">Address</span>
+                        <span class="contact-content">2707 Portland St, 211, Los Angeles, CA 90007</span>
+                        <span class="contact-headers">Contact Number</span>
+                        <span class="contact-content">+1 (213)-522-6313</span>
+                        <span class="contact-headers">Online Profiles</span>
+                        <div class="d-flex flex-row justify-content-between">
+                            <a class="d-flex contact-icon align-content-center" href="https://www.linkedin.com/in/jerry-allan-akshay-2bb934133/" target="_blank" rel="noopener noreferrer">
+                                <img src="global/icons/linkedIn.png"/>
+                                <span>Linked In</span>
+                            </a>
+                            <a class="d-flex contact-icon align-content-center" href="https://www.instagram.com/forjery/?hl=en" target="_blank" rel="noopener noreferrer">
+                                <img src="global/icons/instagram.png"/>
+                                <span>Instagram</span>
+                            </a>
+                            <a class="d-flex contact-icon align-content-center" href="https://www.facebook.com/allan.akshay/" target="_blank" rel="noopener noreferrer">
+                                <img src="global/icons/facebook.png"/>
+                                <span>Facebook</span>
+                            </a>
+                            <a class="d-flex contact-icon align-content-center" href="https://github.com/allanakshay12" target="_blank" rel="noopener noreferrer">
+                                <img src="global/icons/github-personal.png"/>
+                                <span>GitHub (Personal)</span>
+                            </a>
+                            <a class="d-flex contact-icon align-content-center" href="https://github.com/fallen-axe-shay" target="_blank" rel="noopener noreferrer">
+                                <img src="global/icons/github.png"/>
+                                <span>GitHub (Professional)</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="info-container">
+                    <h1 class="display-6">Education</h1>
+                    <div class="p-2">
+                        <!--Content-->
+                        <div class="accordion" id="education-accordion">
+                            <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Graduate
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#education-accordion">
+                                <div class="accordion-body d-flex flex-column">
+                                    <div class="p-2">
+                                        <strong>Degree: </strong> Master of Science
+                                    </div>
+                                    <div class="p-2">
+                                        <strong>Major: </strong> Computer Science
+                                    </div>
+                                    <div class="p-2">
+                                        <strong>University: </strong> University of Southern California
+                                    </div>
+                                    <div class="p-2">
+                                        <strong>Duration: </strong> August 2021 - May 2023
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Undergraduate
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#education-accordion">
+                                <div class="accordion-body d-flex flex-column">
+                                    <div class="p-2">
+                                        <strong>Degree: </strong> Bachelor of Engineering
+                                    </div>
+                                    <div class="p-2">
+                                        <strong>Major: </strong> Computer Science
+                                    </div>
+                                    <div class="p-2">
+                                        <strong>University: </strong> Bangalore University
+                                    </div>
+                                    <div class="p-2">
+                                        <strong>Duration: </strong> August 2016 - September 2020
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="info-container">
+                    <h1 class="display-6">Skills</h1>
+                    <div class="p-2">
+                        <!--Content-->
+                        <div class="accordion" id="skills-accordion">
+                            <div class="accordion-item">
+                            <h2 class="accordion-header" id="skills-headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#skills-collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Programming Languages
+                                </button>
+                            </h2>
+                            <div id="skills-collapseOne" class="accordion-collapse collapse show" aria-labelledby="skills-headingOne" data-bs-parent="#skills-accordion">
+                                <div class="accordion-body d-flex flex-column">
+                                    <div class="p-2">
+                                        C, C++, C#, Java, JavaScript, TypeScript, HTML, CSS, XML, Python
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="accordion-item">
+                            <h2 class="accordion-header" id="skills-headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#skills-collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Frameworks and Tools
+                                </button>
+                            </h2>
+                            <div id="skills-collapseTwo" class="accordion-collapse collapse" aria-labelledby="skills-headingTwo" data-bs-parent="#skills-accordion">
+                                <div class="accordion-body d-flex flex-column">
+                                    <div class="p-2">
+                                        ElectronJS, AngularJS, ReactJS, NodeJS, Flask, .NET, MySQL, Bootstrap, JQuery, Jupyter, Firebase, Git, Docker, AWS, REST, Android Studio
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="info-container">
+                    <h1 class="display-6">Experience</h1>
+                    <div class="p-2">
+                        <!--Content-->
+                        <div class="accordion" id="experience-accordion">
+                            <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#experience-collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                USC Information Sciences Institute
+                                </button>
+                            </h2>
+                            <div id="experience-collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#experience-accordion">
+                                <div class="accordion-body d-flex flex-column">
+                                    <div class="p-2">
+                                        <strong>Position: </strong> Student Worker (Full Stack Developer)
+                                    </div>
+                                    <div class="p-2">
+                                        <strong>Role: </strong> Revolutionize experiment testbeds by implementing DEW (Distributed Experiment Workflows) - a novel approach to testbed design, orchestration, and analysis
+                                    </div>
+                                    <div class="p-2">
+                                        <strong>Duration: </strong> September 2021 - Present
+                                    </div>
+                                    <div class="p-2">
+                                        <a class="info-links" href="https://www.isi.edu/" target="_blank" rel="noopener noreferrer">Learn more about USC ISI</a>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#experience-collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Unisys
+                                </button>
+                            </h2>
+                            <div id="experience-collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#experience-accordion">
+                                <div class="accordion-body d-flex flex-column">
+                                    <div class="p-2">
+                                        <strong>Position: </strong> Associate Engineer
+                                    </div>
+                                    <div class="p-2">
+                                        <strong>Role: </strong> Redesigned and coded a new cross-platform installer for a proprietary cybersecurity product STEALTH, replacing old legacy Windows-only installer
+                                    </div>
+                                    <div class="p-2">
+                                        <strong>Duration: </strong> September 2020 - July 2021
+                                    </div>
+                                    <div class="p-2">
+                                        <a class="info-links" href="https://www.unisys.com/" target="_blank" rel="noopener noreferrer">Learn more about Unisys</a>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="info-container">
+                    <h1 class="display-6">Publications</h1>
+                    <div class="p-2">
+                        <!--Content-->
+                        <div class="accordion" id="publications-accordion">
+                            <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#publications-collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                EPM: Meta-learning method for Remote Sensing Image classification
+                                </button>
+                            </h2>
+                            <div id="publications-collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#publications-accordion">
+                                <div class="accordion-body d-flex flex-column">
+                                    <div class="p-2">
+                                        <strong>Conference: </strong> MISS-2021 Springer Conference
+                                    </div>
+                                    <div class="p-2">
+                                        <strong>Description: </strong> Co-authored a paper on a proprietary improved ensemble remote sensing image classification model leveraging few-shot learning paradigm to improve accuracy scores by around 10% over traditional few-shot learning models
+                                    </div>
+                                    <div class="p-2">
+                                        <strong>Status: </strong> Accepted at MISS-2021 Springer Conference. Pending publication in book series 'Algorithms for Intelligent Systems'
+                                    </div>
+                                    <div class="d-flex p-2">
+                                        <a class="btn btn-success btn-lg publications-btn" href="/global/misc/epm-paper.pdf" role="button" download="EPM Springer Paper.pdf">Download Paper</a>
+                                        <a class="btn btn-success btn-lg publications-btn" href="/global/misc/miss-2021-certificate.pdf" role="button" download="MISS 2021 Certificate.pdf">Download Certificate</a>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="info-container">
+                    <h1 class="display-6">Projects</h1>
+                </div>
+                <hr>
+                <div class="info-container">
+                    <h1 class="display-6">Leadership and Volunteering</h1>
+                </div>
+                <hr>
+                <div class="info-container">
+                    <h1 class="display-6">Awards and Recognition</h1>
+                </div>
               </div>
-
-            <!--Content-->
-            <!-- <div class="accordion" id="accordionExample">
-                <div class="accordion-item">
-                <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    Accordion Item #1
-                    </button>
-                </h2>
-                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                    </div>
-                </div>
-                </div>
-                <div class="accordion-item">
-                <h2 class="accordion-header" id="headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Accordion Item #2
-                    </button>
-                </h2>
-                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                    <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                    </div>
-                </div>
-                </div>
-                <div class="accordion-item">
-                <h2 class="accordion-header" id="headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    Accordion Item #3
-                    </button>
-                </h2>
-                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                    </div>
-                </div>
-                </div>
-            </div> -->
 
         </div>
 
