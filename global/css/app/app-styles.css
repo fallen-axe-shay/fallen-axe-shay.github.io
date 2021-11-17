@@ -161,3 +161,19 @@
     height: 200px;
     border-radius: 20px;
 }
+
+.accordion-header > button > img {
+    height: 30px;
+    align-self: center;
+    align-items: center;
+    margin-left: 10px;
+    float: right;
+}
+
+#unisys-logo {
+    height: 22px;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: white;
+}
