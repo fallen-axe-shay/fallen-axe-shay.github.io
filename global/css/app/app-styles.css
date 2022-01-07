@@ -1,3 +1,7 @@
+body {
+    overflow-x: hidden;
+}
+
 .navbar {
     height: 80px;
     position: fixed;
@@ -48,12 +52,21 @@
     object-position: bottom; /* Center the image within the element */
 }
 
+/* .quote-div {
+    
+} */
+
 .quote {
     position: absolute;
     width: 100%;
     top: 170px;
     padding: 20px;
     text-align: center;
+    transition: transform .2s;
+}
+
+.quote:hover {
+    transform: scale(1.05);
 }
 
 .blockquote > p {
@@ -129,8 +142,30 @@
     padding-top: 10px;
 }
 
+.contact-profiles>a {
+    transition: transform .2s;
+}
+
+.contact-profiles>a:hover {
+    transform: scale(1.2);
+}
+
 .info-links {
     font-style: italic;
+}
+
+.info-links::before {
+    background: url("../../icons/bootstrap-icons/link-45deg.svg") no-repeat;
+    background-position: center;
+    margin-top: 3px;
+    margin-right: 5px;
+    height: 20px;
+    width: 20px;
+    float: left;
+    flex: auto;
+    content: '';
+    align-self: center;
+    padding: 5px;
 }
 
 .publications-btn {
@@ -174,10 +209,30 @@
     height: 22px;
 }
 
+.accordion-button {
+    /* transition: transform .2s; Animation */
+}
+
 .accordion-button:not(.collapsed) {
     background-color: white;
 }
 
+.accordion-button:hover{
+    color: rgb(82, 137, 255);
+}
+
 .address-content {
     cursor: pointer;
+}
+
+.zoom-address, .zoom-number {
+    transition: transform .2s;
+}
+
+.zoom-address:hover {
+    transform: scale(1.1) translateX(14px);
+}
+
+.zoom-number:hover {
+    transform: scale(1.1) translateX(7px);
 }
