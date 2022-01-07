@@ -65,9 +65,9 @@ body {
     transition: transform .2s;
 }
 
-.quote:hover {
+/* .quote:hover {
     transform: scale(1.05);
-}
+} */
 
 .blockquote > p {
     color: white;
