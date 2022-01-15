@@ -1,0 +1,12 @@
+name = "shopify-app"
+type = "javascript"
+
+account_id = ""
+workers_dev = true
+route = ""
+zone_id = ""
+compatibility_date = "2022-01-15"
+
+kv_namespaces = [
+    { binding = "Items", preview_id = "38f9687b726647549e3491d894694e74", id = "debae704bcb64599877bebb6aa5ea440" }
+]
