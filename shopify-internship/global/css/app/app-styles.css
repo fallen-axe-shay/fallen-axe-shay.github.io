@@ -1,0 +1,92 @@
+.image-card {
+    z-index: 50;
+    margin: 20px;
+    box-shadow: 0px 0px 10px #888888;
+    border-radius: 10px;
+    width: 500px;
+    position: relative;
+}
+
+.navbar-brand {
+    padding: 10px;
+}
+
+.navbar-title {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.navbar-sub {
+    font-weight: lighter;
+    font-size: 13px;
+    margin-top: 7px;
+}
+
+.navbar-divider {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.image-card > img {
+    object-fit: cover;
+    border-radius: 10px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    width: 500px;
+    height: 500px;
+}
+
+.image-card > .title {
+    font-weight: bold;
+    padding: 10px;
+    margin-top: 15px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.image-card > .caption {
+    font-weight: normal;
+    padding: 10px;
+    text-align: left;
+}
+
+.image-card > .date {
+    font-weight: lighter;
+    padding: 10px;
+    text-align: center;
+}
+
+.image-card > .buttons {
+    position:absolute; 
+    left:20px; 
+    top:20px;
+    z-index: 100px;
+}
+
+.image-card > .buttons > img {
+    -webkit-filter: invert(100%);
+    width: 30px;
+    /* transition:  .2s; */
+}
+
+.image-card > .buttons > img:hover, .image-card > .buttons > img.liked {
+    -webkit-filter: invert(19%) sepia(62%) saturate(5915%) hue-rotate(333deg) brightness(96%) contrast(103%);
+}
+
+.image-card > .animate-like {
+    position:absolute; 
+    left:155px; 
+    top:150px;
+    z-index: 100px;
+    opacity: 0;
+    transition: opacity 0.3s linear;
+}
+
+.image-card > .animate-like.show {
+    opacity: 1;
+}
+
+.image-card > .animate-like > img {
+    -webkit-filter: invert(100%) opacity(70%);
+    width: 200px;
+}
