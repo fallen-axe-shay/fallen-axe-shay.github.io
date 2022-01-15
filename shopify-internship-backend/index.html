@@ -13,16 +13,119 @@
 
         <nav class="navbar navbar-dark bg-dark sticky-top">
             <div class="navbar-brand">
-                <div class="d-flex flex-row align-items-center">
-                    <span class="navbar-title">Spacetagram</span>
-                    <span class="navbar-divider">|</span>
-                    <span class="navbar-sub">Brought to you by NASA's EPIC API</span>
-                </div>
+                    <div class="d-flex flex-row align-items-center">
+                        <span class="navbar-title">Inventory Management</span>
+                        <span class="navbar-divider">|</span>
+                        <span class="navbar-sub">Brought to you by Jerry Allan Akshay</span>
+                    </div>
+            </div>
+            <div class="d-flex">
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#addModal">Add Item</button>
+                <button type="button" class="btn btn-primary" id="export-to-csv">Export to CSV</button>
             </div>
           </nav>
 
         <div class="images d-flex flex-wrap align-items-center justify-content-around">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                    <th scope="col">UID</th>
+                    <th scope="col">Item Name</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Quantity</th>
+                    <th scope="col">Location</th>
+                    <th scope="col">Options</th>
+                    </tr>
+                </thead>
+                <tbody id="inventory-content">
+                    
+                </tbody>
+                </table>
         </div>
+  
+        <!-- Modal -->
+        <div class="modal fade" id="addModal" tabindex="-1" aria-labelledby="addModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="addModalLabel">Add Item</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex flex-column">
+                        <div class="d-flex align-items-center">
+                            <span class="add-item-headers">Name</span>
+                            <input type="text" class="form-control" id="item-name">
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <span class="add-item-headers">Description</span>
+                            <input type="text" class="form-control" id="item-desc">
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <span class="add-item-headers">Quantity</span>
+                            <input type="number" class="form-control" id="item-quantity">
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <span class="add-item-headers">Location</span>
+                            <select class="form-select" id="item-location" aria-label="Default select example">
+                                <option selected value="California">California</option>
+                                <option value="New York">New York</option>
+                                <option value="Seattle">Seattle</option>
+                                <option value="San Diego">San Diego</option>
+                              </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-success" id="item-add-btn">Add</button>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="addModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="addModalLabel">Edit Item</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex flex-column">
+                        <div class="d-flex align-items-center">
+                            <span class="add-item-headers">Name</span>
+                            <input type="text" class="form-control" id="edit-name">
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <span class="add-item-headers">Description</span>
+                            <input type="text" class="form-control" id="edit-desc">
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <span class="add-item-headers">Quantity</span>
+                            <input type="number" class="form-control" id="edit-quantity">
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <span class="add-item-headers">Location</span>
+                            <select class="form-select" id="edit-location" aria-label="Default select example">
+                                <option value="California">California</option>
+                                <option value="New York">New York</option>
+                                <option value="Seattle">Seattle</option>
+                                <option value="San Diego">San Diego</option>
+                              </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-warning" id="item-edit-btn">Update</button>
+                </div>
+            </div>
+            </div>
+        </div>
+
+
 
         <!--Scripts-->
         <script src="global/scripts/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>

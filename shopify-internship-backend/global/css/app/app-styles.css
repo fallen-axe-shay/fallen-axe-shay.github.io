@@ -1,3 +1,26 @@
+.navbar > div > button {
+    margin-right: 20px;
+}
+
+
+.add-item-headers {
+    min-width: 100px;
+    font-weight: bold;
+}
+
+.modal-body > div > div {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+td > div > button {
+    margin-right: 10px;
+}
+
+td,th {
+    vertical-align: middle;
+}
+
 .image-card {
     z-index: 50;
     margin: 20px;
