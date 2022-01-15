@@ -13,7 +13,12 @@ async function handleRequest(request) {
   } else if(request.url.includes('edit-item')) {
     response = await updateData(request);
   } else {
-    response = new Response("Page not found", { status: 404 });
+    response = new Response("Page not found", { status: 404 , headers: {
+      'Access-Control-Allow-Credentials': 'true',
+      'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
+      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Headers': 'Content-Type'
+    }});
   }
   return response;
 }
@@ -21,9 +26,19 @@ async function handleRequest(request) {
 async function getData(request) {
   let items = await Items.get('items');
   if(items==null) {
-    return new Response(JSON.stringify({}), {status: 200});
+    return new Response(JSON.stringify({}), {status: 200, headers: {
+      'Access-Control-Allow-Credentials': 'true',
+      'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
+      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Headers': 'Content-Type'
+    }});
   }
-  return new Response(items, {status: 200});
+  return new Response(items, {status: 200, headers: {
+    'Access-Control-Allow-Credentials': 'true',
+    'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
+    'Access-Control-Allow-Origin': '*',
+    'Access-Control-Allow-Headers': 'Content-Type'
+  }});
 }
 
 async function updateData(request) {
@@ -38,11 +53,21 @@ async function updateData(request) {
     delete data['id'];
     items[id] = data;
     await Items.put("items", JSON.stringify(items));
-    return new Response(JSON.stringify(items), {status: 200});
+    return new Response(JSON.stringify(items), {status: 200, headers: {
+      'Access-Control-Allow-Credentials': 'true',
+      'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
+      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Headers': 'Content-Type'
+    }});
   } catch(exception) {
     response['message'] = exception.toString();
   }
-  return new Response(JSON.stringify(response), {status: 200});
+  return new Response(JSON.stringify(response), {status: 200, headers: {
+    'Access-Control-Allow-Credentials': 'true',
+    'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
+    'Access-Control-Allow-Origin': '*',
+    'Access-Control-Allow-Headers': 'Content-Type'
+  }});
 }
 
 async function deleteData(request) {
@@ -55,11 +80,21 @@ async function deleteData(request) {
     items = JSON.parse(items);
     delete items[data['name']];
     await Items.put("items", JSON.stringify(items));
-    return new Response(JSON.stringify(items), {status: 200});
+    return new Response(JSON.stringify(items), {status: 200, headers: {
+      'Access-Control-Allow-Credentials': 'true',
+      'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
+      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Headers': 'Content-Type'
+    }});
   } catch(exception) {
     response['message'] = exception.toString();
   }
-  return new Response(JSON.stringify(response), {status: 200});
+  return new Response(JSON.stringify(response), {status: 200, headers: {
+    'Access-Control-Allow-Credentials': 'true',
+    'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
+    'Access-Control-Allow-Origin': '*',
+    'Access-Control-Allow-Headers': 'Content-Type'
+  }});
 }
 
 async function addData(request) {
@@ -81,9 +116,19 @@ async function addData(request) {
     items = JSON.parse(items);
     items[ID()] = data;
     await Items.put("items", JSON.stringify(items));
-    return new Response(JSON.stringify(items), {status: 200});
+    return new Response(JSON.stringify(items), {status: 200, headers: {
+      'Access-Control-Allow-Credentials': 'true',
+      'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
+      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Headers': 'Content-Type'
+    }});
   } catch(exception) {
     response['message'] = exception.toString();
   }
-  return new Response(JSON.stringify(response), {status: 200});
+  return new Response(JSON.stringify(response), {status: 200, headers: {
+    'Access-Control-Allow-Credentials': 'true',
+    'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
+    'Access-Control-Allow-Origin': '*',
+    'Access-Control-Allow-Headers': 'Content-Type'
+  }});
 }
