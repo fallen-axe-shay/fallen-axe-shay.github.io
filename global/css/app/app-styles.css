@@ -28,6 +28,11 @@ body {
     margin-left: 11px;
     margin-top: 9px;
     z-index: 10;
+    transition: transform .2s;
+}
+
+.profile-picture > img:hover {
+    transform: scale(1.1);
 }
 
 .circle {
@@ -45,11 +50,14 @@ body {
     font-size: 25px;
 }
 
-.quote-bg-img > img {
+.quote-bg-img {
     height: 360px;
+    background: url("../../images/quote-background.jpg");
+    background-position: center;
     min-width: -webkit-fill-available;
-    object-fit: none; /* Do not scale the image */
-    object-position: bottom; /* Center the image within the element */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* .quote-div {
@@ -63,6 +71,7 @@ body {
     padding: 20px;
     text-align: center;
     transition: transform .2s;
+    background: rgba(0, 0, 0, 0.486);
 }
 
 /* .quote:hover {
@@ -81,6 +90,7 @@ body {
     float: right;
     font-size: 20px;
     margin-top: 5px;
+    margin-bottom: 0px !important;
 }
 
 .resume-download > span {
