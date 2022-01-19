@@ -7,6 +7,8 @@ body {
     position: fixed;
     width: 100%;
     z-index: 5;
+    background-color: rgba(0, 0, 0, 0.678) !important;
+    backdrop-filter: blur(6px);
 }
 
 .profile-picture {
@@ -25,8 +27,8 @@ body {
     border-radius: 110px;
     right: 0;
     top: 0;
-    margin-left: 11px;
-    margin-top: 9px;
+    margin-left: 10px;
+    margin-top: 10px;
     z-index: 10;
     transition: transform .2s;
 }
@@ -51,7 +53,7 @@ body {
 }
 
 .quote-bg-img {
-    height: 360px;
+    height: 430px;
     background: url("../../images/quote-background.jpg");
     background-position: center;
     min-width: -webkit-fill-available;
@@ -67,7 +69,7 @@ body {
 .quote {
     position: absolute;
     width: 100%;
-    top: 170px;
+    top: 180px;
     padding: 20px;
     text-align: center;
     transition: transform .2s;
