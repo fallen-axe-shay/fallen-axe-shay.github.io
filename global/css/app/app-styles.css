@@ -251,3 +251,7 @@ body {
 .zoom-number:hover {
     transform: scale(1.1) translateX(7px);
 }
+
+ul {
+    margin-bottom: 0px;
+}
