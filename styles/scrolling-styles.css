@@ -52,7 +52,6 @@
     margin-top: 10px;
     margin-bottom: 10px;
     padding: 20px;
-    margin-right: 2px;
     z-index: 5;
     background-size: cover;
     background-repeat: no-repeat;
@@ -61,7 +60,7 @@
     background-color: rgba(0, 0, 0, 1);
     transition: background-color 0.5s ease-in-out,background-image 0.1s ease-in-out;
     text-align: left;
-    width: 100%;
+    width: inherit;
     word-spacing:9999px;
     line-height: 70px;
     letter-spacing: 10px;
