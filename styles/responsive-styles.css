@@ -1,0 +1,19 @@
+/* responsive style for medium screen size */
+@media only screen and (max-width: 1000px) {
+    /* .blackout-screen {
+        display: none;
+    } */
+
+    .mobile-flex-column {
+        flex-direction: column;
+    }
+
+    .person-container .person-img-container {
+        width: 100%;
+    }
+
+    .footer .footer-content {
+        justify-content: flex-start;
+        align-items: start;
+    }
+}

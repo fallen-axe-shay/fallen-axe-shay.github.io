@@ -1,0 +1,371 @@
+* {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html, body {
+    margin:0;
+    padding:0;
+}
+
+body {
+    margin: 0px;
+    background-color: white;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.fade-in {
+    animation: fadeIn ease 1s;
+    -webkit-animation: fadeIn ease 1s;
+    -moz-animation: fadeIn ease 1s;
+    -o-animation: fadeIn ease 1s;
+    -ms-animation: fadeIn ease 1s;
+}
+
+.flex-grow-1 {
+    flex-grow: 1;
+}
+
+.person-container {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    position: sticky;
+    top: 0px;
+    /* z-index: 51;   */
+    transition: display 0.5s ease-in-out;
+}
+
+.always-in-front {
+    z-index: 51;
+}
+
+.person-container .name {
+    align-self: center;
+}
+
+.person-container .name span {
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.slide-in-from-right {
+    animation: slideInFromRight ease 1s;
+    -webkit-animation: slideInFromRight ease 1s;
+    -moz-animation: slideInFromRight ease 1s;
+    -o-animation: slideInFromRight ease 1s;
+    -ms-animation: slideInFromRight ease 1s;
+}
+
+.slide-in-from-left {
+    animation: slideInFromLeft ease 1s;
+    -webkit-animation: slideInFromLeft ease 1s;
+    -moz-animation: slideInFromLeft ease 1s;
+    -o-animation: slideInFromLeft ease 1s;
+    -ms-animation: slideInFromLeft ease 1s;
+}
+
+.person-container .info {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.person-container .info span {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+    text-align: left;
+}
+
+.scroll-container { 
+    width: 100%;
+    height: 100%;
+}
+
+.person-container.big {
+    position: relative;
+    z-index: 10;
+    margin-bottom: 20px;
+}
+
+.person-container.big .person-img{
+    width: 100%;
+    height: 100%;
+    max-height: inherit;
+    background-image: url("../images/cover-photo-flipped.png");
+
+    /* Set a specific height */
+    min-height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: auto;
+
+    opacity: 0.5;
+}
+
+.person-container.big .name {
+    position: absolute;
+    top: calc(50% - 25px);
+    text-align: center;
+    width: 100%;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.person-container.big .info {
+    align-self: center;
+    padding: 20px;
+}
+
+.person-container.big .info .featured-item {
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: rgb(34, 34, 34);
+    min-width: 80%;
+}
+
+.person-container.big .info .featured-item:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+.person-container.big .info .icon {
+    height: 100px;
+    width: 100px;
+    margin: 20px;
+    position: relative;
+}
+
+.person-container.big .info .icon img {
+    height: 50px;
+    filter: invert(100%) sepia(2%) saturate(7495%) hue-rotate(8deg) brightness(114%) contrast(107%);
+    position: absolute;
+    top: 26px;
+    z-index: 5;
+    left: 23px;
+}
+
+.person-container.big .info .icon img:hover {
+    filter: invert(0%) sepia(100%) saturate(0%) hue-rotate(50deg) brightness(106%) contrast(104%);
+}
+
+.person-container.big .info .icon .bg-circle {
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.person-container.big .info .icon img:hover + .bg-circle {
+    opacity: 1;
+}
+
+.display-none {
+    display: none;
+}
+
+.col-7 {
+    width: 70%;
+}
+
+.col-3 {
+    width: 30%;
+}
+
+.fade-out {
+    animation: fadeOut ease 1s;
+    -webkit-animation: fadeOut ease 1s;
+    -moz-animation: fadeOut ease 1s;
+    -o-animation: fadeOut ease 1s;
+    -ms-animation: fadeOut ease 1s;
+}
+
+.bring-to-front {
+    z-index: 50;
+}
+
+.blackout-screen {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: black;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    z-index: 0;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin-top: 70px;
+    position: relative;
+}
+
+.footer .footer-item {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    margin-bottom: 10px;
+}
+
+.footer .footer-item:hover {
+    text-decoration: underline;
+}
+
+
+.footer .footer-item img{
+    height: 40px;
+    margin-right: 15px;
+}
+
+.footer-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.slide-in-from-below {
+    animation: slideInFromBelow ease 1s;
+    -webkit-animation: slideInFromBelow ease 1s;
+    -moz-animation: slideInFromBelow ease 1s;
+    -o-animation: slideInFromBelow ease 1s;
+    -ms-animation: slideInFromBelow ease 1s;
+}
+
+.black-to-white {
+    filter: invert(100%) sepia(2%) saturate(7495%) hue-rotate(8deg) brightness(114%) contrast(107%);
+}
+
+.person-container.big .info .connection-links {
+    display: flex;
+    align-items: center;
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.person-container.big .info .connection-links:hover {
+    transform: scale(1.1);
+}
+
+.person-container.big .info .connection-links img {
+    height: 50px;
+    padding: 10px;
+}
+
+.connection {
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.person-container.big .snippet {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.person-container .person-img-container {
+    width: 70%; 
+    position: relative;
+}
+
+.person-container.big .snippet span {
+    text-align: center;
+    padding: 10px;
+}
+
+.footer .footer-header {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.footer .footer-content {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer .footer-copyright {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+@keyframes slideInFromBelow {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

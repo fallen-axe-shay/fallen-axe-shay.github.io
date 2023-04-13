@@ -1,0 +1,128 @@
+{
+    "academics": {
+        "usc": {
+            "name": "University of Southern California",
+            "location": "Los Angeles, CA",
+            "degree": "Masters of Science",
+            "major": "Computer Science",
+            "duration": "August 2021 - May 2023",
+            "content": "<b>GPA:</b> 3.95</p><p><b>Honors:</b> MS CS Honors",
+            "picture": "images/usc.jpg",
+            "background-color": "#FFC72C",
+            "color": "#9D2235",
+            "divider-color": "#9D2235"
+        },
+        "uvce": {
+            "name": "University Visvesvaraya College of Engineering",
+            "location": "Bangalore, India",
+            "degree": "Bachelors of Engineering",
+            "major": "Computer Science",
+            "duration": "August 2016 - September 2020",
+            "content": "<b>Percentage:</b> 83.5%</p>",
+            "picture": "images/uvce.jpg",
+            "background-color": "#fff4d5",
+            "color": "#ad2817",
+            "divider-color": "#ad2817"
+        },
+        "cmr": {
+            "name": "CMR National PU College",
+            "location": "Bangalore, India",
+            "degree": "Pre-University",
+            "major": "PCME",
+            "duration": "June 2014 - May 2016",
+            "content": "",
+            "picture": "images/cmr.jpg",
+            "background-color": "#FFFFFF",
+            "color": "#02b3ab",
+            "divider-color": "#02b3ab"
+        },
+        "clarence": {
+            "name": "Clarence High School",
+            "location": "Bangalore, India",
+            "degree": "High School",
+            "major": "ICSE",
+            "duration": "June 2002 - May 2014",
+            "content": "",
+            "picture": "images/clarence.jpg",
+            "background-color": "#f8cf03",
+            "color": "#00237d",
+            "divider-color": "#00237d"
+        }
+    },
+    "work": {
+        "bloomberg": {
+            "name": "Bloomberg LP",
+            "location": "New York, NY",
+            "degree": "Software Engineer",
+            "major": "Trading & Analytics",
+            "duration": "June 2023 - Present",
+            "content": "",
+            "picture": "images/bloomberg-new.jpg",
+            "background-color": "#000000",
+            "color": "#ffffff",
+            "divider-color": "#000000"
+        },
+        "juniper": {
+            "name": "Juniper Networks",
+            "location": "Sunnyvale, CA",
+            "degree": "Software Engineer Intern",
+            "major": "vSRX Firewall",
+            "duration": "May 2022 - August 2022",
+            "content": "",
+            "picture": "images/juniper.jpg",
+            "background-color": "#90ae3e",
+            "color": "#ffffff",
+            "divider-color": "#90ae3e"
+        },
+        "unisys": {
+            "name": "Unisys",
+            "location": "Bangalore, India",
+            "degree": "Associate Engineer",
+            "major": "STEALTH",
+            "duration": "September 2020 - July 2021",
+            "content": "",
+            "picture": "images/unisys.cms",
+            "background-color": "#003135",
+            "color": "#00e28c",
+            "divider-color": "#003135"
+        }
+    },
+    "campus": {
+        "ta-webtech": {
+            "name": "University of Southern California",
+            "location": "Los Angeles, CA",
+            "degree": "Graduate Teaching Assistant",
+            "major": "Web Technologies",
+            "duration": "January 2023 - May 2023",
+            "content": "",
+            "picture": "images/ta-webtech.jpg",
+            "background-color": "#9D2235",
+            "color": "#FFC72C",
+            "divider-color": "#9D2235"
+        },
+        "ta-mlds": {
+            "name": "University of Southern California",
+            "location": "Los Angeles, CA",
+            "degree": "Graduate Teaching Assistant",
+            "major": "Machine Learning",
+            "duration": "August 2022 - December 2022",
+            "content": "",
+            "picture": "images/ta-mlds.png",
+            "background-color": "#FFC72C",
+            "color": "#9D2235",
+            "divider-color": "#9D2235"
+        },
+        "isi": {
+            "name": "Information Sciences Institute",
+            "location": "Marina Del Rey, CA",
+            "degree": "Student Researcher",
+            "major": "Full Stack Development",
+            "duration": "August 2021 - January 2023",
+            "content": "",
+            "picture": "images/isi.jpg",
+            "background-color": "#ffffff",
+            "color": "#9D2235",
+            "divider-color": "#9D2235"
+        }
+    }
+}
