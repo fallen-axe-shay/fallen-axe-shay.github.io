@@ -133,6 +133,7 @@
 
 .slides-data .content h1 {
     margin-top: 0px;
+    margin-bottom: 20px;
     transition: color 0.3s ease-in-out;
 }
 
@@ -143,7 +144,7 @@
 
 /* last child of the list */
 .slides-data .content li:last-child {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .slides-data .content a {
@@ -168,8 +169,6 @@
 }
 
 .slides-data .content .skill-container .skill {
-    background-color: white;
-    color: #000;
     padding: 10px;
     border-radius: 10px;
     margin: 10px;

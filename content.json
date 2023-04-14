@@ -10,7 +10,19 @@
             "picture": "images/usc.jpg",
             "background-color": "#FFC72C",
             "color": "#9D2235",
-            "divider-color": "#9D2235"
+            "divider-color": "#9D2235",
+            "contributions": ["Took a course on Machine Learning and Deep Learning", "Took a course on Computer Vision", "Took a course on Natural Language Processing", "Took a course on Data Structures and Algorithms"],
+            "links": [
+                {
+                    "text": "USC",
+                    "url": "https://www.usc.edu/"
+                },
+                {
+                    "text": "USC Viterbi School of Engineering",
+                    "url": "https://viterbi.usc.edu/"
+                }
+            ],
+            "skills":["Python", "Operating Systems"]
         },
         "uvce": {
             "name": "University Visvesvaraya College of Engineering",
@@ -22,7 +34,19 @@
             "picture": "images/uvce.jpg",
             "background-color": "#fff4d5",
             "color": "#ad2817",
-            "divider-color": "#ad2817"
+            "divider-color": "#ad2817",
+            "contributions": ["Took a course on Machine Learning and Deep Learning", "Took a course on Computer Vision", "Took a course on Natural Language Processing", "Took a course on Data Structures and Algorithms"],
+            "links": [
+                {
+                    "text": "UVCE",
+                    "url": "https://www.uvce.ac.in/"
+                },
+                {
+                    "text": "UVCE Computer Science Department",
+                    "url": "https://www.uvce.ac.in/departments/computer-science-engineering"
+                }
+            ],
+            "skills":["Python", "Operating Systems"]
         },
         "cmr": {
             "name": "CMR National PU College",
@@ -34,7 +58,15 @@
             "picture": "images/cmr.jpg",
             "background-color": "#FFFFFF",
             "color": "#02b3ab",
-            "divider-color": "#02b3ab"
+            "divider-color": "#02b3ab",
+            "contributions": ["Took a course on Machine Learning and Deep Learning", "Took a course on Computer Vision", "Took a course on Natural Language Processing", "Took a course on Data Structures and Algorithms"],
+            "links": [
+                {
+                    "text": "CMR",
+                    "url": "https://www.cmr.edu.in/"
+                }
+            ],
+            "skills":["Python", "Operating Systems"]
         },
         "clarence": {
             "name": "Clarence High School",
@@ -46,7 +78,15 @@
             "picture": "images/clarence.jpg",
             "background-color": "#f8cf03",
             "color": "#00237d",
-            "divider-color": "#00237d"
+            "divider-color": "#00237d",
+            "contributions": ["Took a course on Machine Learning and Deep Learning", "Took a course on Computer Vision", "Took a course on Natural Language Processing", "Took a course on Data Structures and Algorithms"],
+            "links": [
+                {
+                    "text": "Clarence",
+                    "url": "https://www.clarencehighschool.com/"
+                }
+            ],
+            "skills":["Python", "Operating Systems"]
         }
     },
     "work": {
@@ -123,6 +163,26 @@
                     "text": "vSRX",
                     "url": "https://www.juniper.net/us/en/products-services/security/vsrx/"
                 }
+            ],
+            "skills": [
+                "C++",
+                "Python",
+                "JavaScript",
+                "React",
+                "HTML",
+                "CSS",
+                "SQL",
+                "Git",
+                "Jenkins",
+                "Jira",
+                "Confluence",
+                "Docker",
+                "Kubernetes",
+                "AWS",
+                "GCP",
+                "Azure",
+                "Linux",
+                "Windows"
             ]
         },
         "unisys": {
@@ -135,7 +195,44 @@
             "picture": "images/unisys.cms",
             "background-color": "#003135",
             "color": "#00e28c",
-            "divider-color": "#003135"
+            "divider-color": "#003135",
+            "contributions": [
+                "Developed a new feature for the Bloomberg Terminal to allow users to view and analyze the performance of their portfolios in a single view.",
+                "Implemented a new feature to allow users to view and analyze the performance of their portfolios in a single view.",
+                "Developed a new feature to allow users to view and analyze the performance of their portfolios in a single view.",
+                "Implemented a new feature to allow users to view and analyze the performance of their portfolios in a single view."
+            ],
+            "links": [
+                {
+                    "text": "Unisys",
+                    "url": "https://www.unisys.com/"
+                },
+                {
+                    "text": "STEALTH",
+                    "url": "https://www.unisys.com/what-we-do/stealth/"
+                }
+            ],
+            "skills": [
+                "Java",
+                "C++",
+                "Python",
+                "JavaScript",
+                "React",
+                "HTML",
+                "CSS",
+                "SQL",
+                "Git",
+                "Jenkins",
+                "Jira",
+                "Confluence",
+                "Docker",
+                "Kubernetes",
+                "AWS",
+                "GCP",
+                "Azure",
+                "Linux",
+                "Windows"
+            ]
         }
     },
     "campus": {
@@ -149,7 +246,44 @@
             "picture": "images/ta-webtech.jpg",
             "background-color": "#9D2235",
             "color": "#FFC72C",
-            "divider-color": "#9D2235"
+            "divider-color": "#9D2235",
+            "contributions": [
+                "Developed a new feature for the Bloomberg Terminal to allow users to view and analyze the performance of their portfolios in a single view.",
+                "Implemented a new feature to allow users to view and analyze the performance of their portfolios in a single view.",
+                "Developed a new feature to allow users to view and analyze the performance of their portfolios in a single view.",
+                "Implemented a new feature to allow users to view and analyze the performance of their portfolios in a single view."
+            ],
+            "links": [
+                {
+                    "text": "University of Southern California",
+                    "url": "https://www.usc.edu/"
+                },
+                {
+                    "text": "Web Technologies",
+                    "url": "https://www.usc.edu/schools/annenberg/programs/graduate-programs/web-technologies"
+                }
+            ],
+            "skills": [
+                "Java",
+                "C++",
+                "Python",
+                "JavaScript",
+                "React",
+                "HTML",
+                "CSS",
+                "SQL",
+                "Git",
+                "Jenkins",
+                "Jira",
+                "Confluence",
+                "Docker",
+                "Kubernetes",
+                "AWS",
+                "GCP",
+                "Azure",
+                "Linux",
+                "Windows"
+            ]
         },
         "ta-mlds": {
             "name": "University of Southern California",
@@ -161,7 +295,44 @@
             "picture": "images/ta-mlds.png",
             "background-color": "#FFC72C",
             "color": "#9D2235",
-            "divider-color": "#9D2235"
+            "divider-color": "#9D2235",
+            "contributions": [
+                "Developed a new feature for the Bloomberg Terminal to allow users to view and analyze the performance of their portfolios in a single view.",
+                "Implemented a new feature to allow users to view and analyze the performance of their portfolios in a single view.",
+                "Developed a new feature to allow users to view and analyze the performance of their portfolios in a single view.",
+                "Implemented a new feature to allow users to view and analyze the performance of their portfolios in a single view."
+            ],
+            "links": [
+                {
+                    "text": "University of Southern California",
+                    "url": "https://www.usc.edu/"
+                },
+                {
+                    "text": "Machine Learning",
+                    "url": "https://www.usc.edu/schools/annenberg/programs/graduate-programs/machine-learning"
+                }
+            ],
+            "skills": [
+                "Java",
+                "C++",
+                "Python",
+                "JavaScript",
+                "React",
+                "HTML",
+                "CSS",
+                "SQL",
+                "Git",
+                "Jenkins",
+                "Jira",
+                "Confluence",
+                "Docker",
+                "Kubernetes",
+                "AWS",
+                "GCP",
+                "Azure",
+                "Linux",
+                "Windows"
+            ]
         },
         "isi": {
             "name": "Information Sciences Institute",
@@ -173,7 +344,44 @@
             "picture": "images/isi.jpg",
             "background-color": "#ffffff",
             "color": "#9D2235",
-            "divider-color": "#9D2235"
+            "divider-color": "#9D2235",
+            "contributions": [
+                "Developed a new feature for the Bloomberg Terminal to allow users to view and analyze the performance of their portfolios in a single view.",
+                "Implemented a new feature to allow users to view and analyze the performance of their portfolios in a single view.",
+                "Developed a new feature to allow users to view and analyze the performance of their portfolios in a single view.",
+                "Implemented a new feature to allow users to view and analyze the performance of their portfolios in a single view."
+            ],
+            "links": [
+                {
+                    "text": "Information Sciences Institute",
+                    "url": "https://www.isi.edu/"
+                },
+                {
+                    "text": "Full Stack Development",
+                    "url": "https://www.isi.edu/research/areas/full-stack-development"
+                }
+            ],
+            "skills": [
+                "Java",
+                "C++",
+                "Python",
+                "JavaScript",
+                "React",
+                "HTML",
+                "CSS",
+                "SQL",
+                "Git",
+                "Jenkins",
+                "Jira",
+                "Confluence",
+                "Docker",
+                "Kubernetes",
+                "AWS",
+                "GCP",
+                "Azure",
+                "Linux",
+                "Windows"
+            ]
         }
     }
 }

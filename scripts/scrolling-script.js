@@ -148,7 +148,7 @@ function itemOnHover(item) {
     $(dataTarget).find('img').css('filter', filterVal);
     $(dataTarget).find('.content').css('color', dataTargetColor);
     // get contribution data
-    populateContributionData(dataTarget, $(item).parent(), id);
+    populateContributionData(dataTarget, $(item).parent(), id, dataTargetColor, dataTargetBgColor);
 }
 
 function itemAfterHover(item) {
@@ -240,11 +240,10 @@ function setDefaultPullDownColor(container) {
     $(dataTarget).find('img').css('filter', filterVal);
     $(dataTarget).find('.content').css('color', targetColor);
 
-    populateContributionData(dataTarget, container, $(container).find('.item').first().attr('id'));
-    
+    populateContributionData(dataTarget, container, $(container).find('.item').first().attr('id'), targetColor, targetBgColor);
 }
 
-function populateContributionData(dataTarget, container, itemId) {
+function populateContributionData(dataTarget, container, itemId, targetColor, targetBgColor) {
     //set default content
     let content = CONTENT[$(container).parent().attr('id')][itemId];
     // delete all children of $(dataTarget).find('.content div')
@@ -282,6 +281,9 @@ function populateContributionData(dataTarget, container, itemId) {
             let skill = document.createElement('div');
             $(skill).addClass('skill');
             $(skill).text(item);
+            // set background-color and color of skill
+            $(skill).css('background-color', targetColor);
+            $(skill).css('color', targetBgColor);
             $(div).append(skill);
         }
         // add h1 tag with text 'Skills'
