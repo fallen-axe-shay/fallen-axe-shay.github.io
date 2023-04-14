@@ -151,11 +151,11 @@ function itemOnHover(item) {
 function itemAfterHover(item) {
     let listHeader = $(item).parent().parent().find('.list-header');
     listHeader.css('background-color', 'rgba(0, 0, 0, 1)');
-    let dataTarget = $(item).attr('data-target');
-    $(dataTarget).css('background-color', 'rgba(0, 0, 0, 1)');
-    $(dataTarget).find('.slides-arrow').css('background-color', 'rgba(0, 0, 0, 1)');
-    let filterVal = generateFilter('rgb(255, 255, 255)');
-    $(dataTarget).find('img').css('filter', filterVal);
+    // let dataTarget = $(item).attr('data-target');
+    // $(dataTarget).css('background-color', 'rgba(0, 0, 0, 1)');
+    // $(dataTarget).find('.slides-arrow').css('background-color', 'rgba(0, 0, 0, 1)');
+    // let filterVal = generateFilter('rgb(255, 255, 255)');
+    // $(dataTarget).find('img').css('filter', filterVal);
 }
 
 // on hover, add class 'selected' to hovered item
