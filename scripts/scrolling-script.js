@@ -274,5 +274,21 @@ function populateContributionData(dataTarget, container, itemId) {
         }
         $(dataTarget).find('.content div').append(ul2);
     }
+    // create a flexbox div and append every item from content['skills'] array to it. Append the class .skill to it
+    if(content['skills'] && content['skills'].length != 0) {
+        let div = document.createElement('div');
+        $(div).addClass('skill-container');
+        for(const item of content['skills']) {
+            let skill = document.createElement('div');
+            $(skill).addClass('skill');
+            $(skill).text(item);
+            $(div).append(skill);
+        }
+        // add h1 tag with text 'Skills'
+        let h1 = document.createElement('h1');
+        $(h1).text('Skills');
+        $(dataTarget).find('.content div').append(h1);
+        $(dataTarget).find('.content div').append(div);
+    }
 }
 

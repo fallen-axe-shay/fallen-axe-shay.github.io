@@ -76,6 +76,27 @@
                     "text": "Bloomberg Terminal",
                     "url": "https://www.bloomberg.com/professional/solution/bloomberg-terminal/"
                 }
+            ],
+            "skills": [
+                "Java",
+                "C++",
+                "Python",
+                "JavaScript",
+                "React",
+                "HTML",
+                "CSS",
+                "SQL",
+                "Git",
+                "Jenkins",
+                "Jira",
+                "Confluence",
+                "Docker",
+                "Kubernetes",
+                "AWS",
+                "GCP",
+                "Azure",
+                "Linux",
+                "Windows"
             ]
         },
         "juniper": {
@@ -88,7 +109,21 @@
             "picture": "images/juniper.jpg",
             "background-color": "#90ae3e",
             "color": "#ffffff",
-            "divider-color": "#90ae3e"
+            "divider-color": "#90ae3e",
+            "contributions": [
+                "Fixed a critical security vulnerability involving data retrieval from AWS servers on booting a machine instance on AWS",
+                "Implemented a usage statistics retrieval mechanism on vSRX – a virtually hosted Juniper firewall system – enabling the company to use the retrieved data to improve AI-driven network security mechanisms"
+            ],
+            "links": [
+                {
+                    "text": "Juniper Networks",
+                    "url": "https://www.juniper.net/us/en/"
+                },
+                {
+                    "text": "vSRX",
+                    "url": "https://www.juniper.net/us/en/products-services/security/vsrx/"
+                }
+            ]
         },
         "unisys": {
             "name": "Unisys",
