@@ -60,7 +60,23 @@
             "picture": "images/bloomberg-new.jpg",
             "background-color": "#000000",
             "color": "#ffffff",
-            "divider-color": "#000000"
+            "divider-color": "#000000",
+            "contributions": [
+                "Developed a new feature for the Bloomberg Terminal to allow users to view and analyze the performance of their portfolios in a single view.",
+                "Implemented a new feature to allow users to view and analyze the performance of their portfolios in a single view.",
+                "Developed a new feature to allow users to view and analyze the performance of their portfolios in a single view.",
+                "Implemented a new feature to allow users to view and analyze the performance of their portfolios in a single view."
+            ],
+            "links": [
+                {
+                    "text": "Bloomberg",
+                    "url": "https://www.bloomberg.com/"
+                },
+                {
+                    "text": "Bloomberg Terminal",
+                    "url": "https://www.bloomberg.com/professional/solution/bloomberg-terminal/"
+                }
+            ]
         },
         "juniper": {
             "name": "Juniper Networks",

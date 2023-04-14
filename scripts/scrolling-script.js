@@ -146,6 +146,7 @@ function itemOnHover(item) {
     $(dataTarget).find('.slides-arrow').css('background-color', dataTargetBgColor);
     let filterVal = generateFilter(dataTargetColor);
     $(dataTarget).find('img').css('filter', filterVal);
+    $(dataTarget).find('.content').css('color', dataTargetColor);
 }
 
 function itemAfterHover(item) {
@@ -206,9 +207,21 @@ for(const element of slidesContainers) {
         $(dataTarget).removeClass('hovered');
         $(element).parent().find('.list-header').removeClass('bring-to-front');
     });
-
+    setupContributionContainer(element);
     setDefaultPullDownColor(element);
 };
+
+function setupContributionContainer(container) {
+    // find data-target attribute of the element
+    let dataTarget = $(container).attr('data-target');
+    // find .content
+    let content = $(dataTarget).find('.content');
+    let header = document.createElement('h1');
+    header.innerHTML = 'Contributions';
+    content.append(header);
+    let div = document.createElement('div');
+    content.append(div);
+}
 
 function setDefaultPullDownColor(container) {
     // find data-target attribute of the element
@@ -223,5 +236,39 @@ function setDefaultPullDownColor(container) {
     $(dataTarget).find('.slides-arrow').css('background-color', targetBgColor);
     let filterVal = generateFilter(targetColor);
     $(dataTarget).find('img').css('filter', filterVal);
+    $(dataTarget).find('.content').css('color', targetColor);
+
+    populateContributionData(dataTarget, container, $(container).find('.item').first().attr('id'));
+    
+}
+
+function populateContributionData(dataTarget, container, itemId) {
+    //set default content
+    let content = CONTENT[$(container).parent().attr('id')][itemId];
+    // create ul and populate with li from content['contributions'] array. Append this to $(dataTarget).find('.content div')
+    let ul = document.createElement('ul');
+    if(content['contributions'] && content['contributions'].length != 0) {
+        for(const item of content['contributions']) {
+            let li = document.createElement('li');
+            $(li).text(item);
+            $(ul).append(li);
+        }
+        $(dataTarget).find('.content div').append(ul);
+    }
+    // create a ul without markers and append every link from content['links'] array to $(dataTarget).find('.content div')
+    if(content['links'] && content['links'].length != 0) {
+        let ul2 = document.createElement('ul');
+        $(ul2).css('list-style-type', 'none');
+        for(const item of content['links']) {
+            let li = document.createElement('li');
+            let a = document.createElement('a');
+            $(a).attr('href', item['url']);
+            $(a).attr('target', '_blank');
+            $(a).text(item['text']);
+            $(li).append(a);
+            $(ul2).append(li);
+        }
+        $(dataTarget).find('.content div').append(ul2);
+    }
 }
 
