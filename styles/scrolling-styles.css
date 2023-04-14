@@ -114,6 +114,22 @@
     height: 500px;
 }
 
+.slides-data .container {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.slides-data .content {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    border: 1px solid white;
+    padding: 20px;
+    margin: 40px;
+    height: calc(100% - 120px);
+    width: calc(100% - 120px);
+}
+
 @media screen and (max-width: 1000px) {
 
     .list-header {
