@@ -147,6 +147,8 @@ function itemOnHover(item) {
     let filterVal = generateFilter(dataTargetColor);
     $(dataTarget).find('img').css('filter', filterVal);
     $(dataTarget).find('.content').css('color', dataTargetColor);
+    // get contribution data
+    populateContributionData(dataTarget, $(item).parent(), id);
 }
 
 function itemAfterHover(item) {
@@ -245,6 +247,8 @@ function setDefaultPullDownColor(container) {
 function populateContributionData(dataTarget, container, itemId) {
     //set default content
     let content = CONTENT[$(container).parent().attr('id')][itemId];
+    // delete all children of $(dataTarget).find('.content div')
+    $(dataTarget).find('.content div').empty();
     // create ul and populate with li from content['contributions'] array. Append this to $(dataTarget).find('.content div')
     let ul = document.createElement('ul');
     if(content['contributions'] && content['contributions'].length != 0) {
